@@ -1,0 +1,23 @@
+[package]
+name = "exifscrub"
+version = "0.1.0"
+edition = "2021"
+description = "Views and losslessly strips EXIF/GPS and other metadata from JPEG and PNG images, byte-for-byte, with no re-encoding"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/exifscrub"
+readme = "README.md"
+keywords = ["exif", "privacy", "metadata", "jpeg", "png"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "exifscrub"
+path = "src/lib.rs"
+
+[[bin]]
+name = "exifscrub"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
