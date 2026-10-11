@@ -11,6 +11,12 @@ level, not by re-decoding and re-encoding the image. Every byte of
 actual pixel/scan data is copied through untouched — only the
 metadata containers themselves are removed.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
